@@ -78,3 +78,4 @@ def executeCommands():
 	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Sphere']]
 	bpy.context.view_layer.objects.active = bpy.data.objects['Sphere']
 >>>>>>> Stashed changes
+	bpy.ops.object.delete(use_global=False)
