@@ -78,20 +78,4 @@ def executeCommands():
 	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Sphere']]
 	bpy.context.view_layer.objects.active = bpy.data.objects['Sphere']
 >>>>>>> Stashed changes
-	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
-	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Sphere.001', 'Sphere.002']]
-	bpy.context.view_layer.objects.active = bpy.data.objects['Sphere.001']
-	bpy.ops.object.delete(use_global=False, confirm=False)
-	bpy.ops.object.delete(use_global=False, confirm=False)
-	bpy.ops.object.editmode_toggle()
-	bpy.ops.object.editmode_toggle()
-	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
-	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['root', 'SKM_Quinn_Simple_LOD2', 'SKM_Quinn_Simple_LOD0', 'SKM_Quinn_Simple_LOD1', 'SKM_Quinn_Simple_LodGroup', 'SKM_Quinn_Simple']]
-	bpy.context.view_layer.objects.active = bpy.data.objects['root']
-	bpy.ops.transform.translate(value=(5.40387, 0, 0), orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', constraint_axis=(True, False, False), mirror=False, use_proportional_edit=False, proportional_edit_falloff='SMOOTH', proportional_size=1, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False, alt_navigation=True)
-	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
-	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Omah Jimbaran']]
-	bpy.context.view_layer.objects.active = bpy.data.objects['Omah Jimbaran']
-	bpy.ops.transform.resize(value=(1.38956, 1.38956, 1.38956), orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', mirror=False, use_proportional_edit=False, proportional_edit_falloff='SMOOTH', proportional_size=1, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False, alt_navigation=True)
-	bpy.ops.object.editmode_toggle()
-	bpy.ops.object.editmode_toggle()
+	bpy.ops.object.delete(use_global=False)
