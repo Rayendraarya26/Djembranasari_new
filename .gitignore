@@ -1,7 +1,5 @@
 # Blendit
 assets/
-*.blend
-*.blend*
 
 # Python
 # Byte-compiled / optimized / DLL files
