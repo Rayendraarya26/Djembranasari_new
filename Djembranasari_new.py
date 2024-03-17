@@ -190,3 +190,17 @@ def executeCommands():
 	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
 	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Omah Jimbaran']]
 	bpy.context.view_layer.objects.active = bpy.data.objects['Omah Jimbaran']
+	bpy.context.object.modifiers["Subdivision"].show_viewport = False
+	bpy.context.object.modifiers["Subdivision"].show_viewport = True
+	bpy.context.object.modifiers["Subdivision"].show_viewport = False
+	bpy.context.object.modifiers["Subdivision"].show_viewport = True
+	bpy.context.object.modifiers["Subdivision"].show_viewport = False
+	bpy.context.object.modifiers["Subdivision"].show_render = False
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.mesh.select_mode(use_extend=False, use_expand=False, type='FACE')
+	bpy.context.object.modifiers["Subdivision"].show_in_editmode = False
+	bpy.ops.object.modifier_add(type='SUBSURF')
+	bpy.context.object.modifiers["Subdivision.001"].subdivision_type = 'SIMPLE'
+	bpy.context.object.modifiers["Subdivision.001"].subdivision_type = 'CATMULL_CLARK'
+	bpy.context.object.modifiers["Subdivision.001"].subdivision_type = 'SIMPLE'
+	bpy.ops.object.modifier_remove(modifier="Subdivision")
